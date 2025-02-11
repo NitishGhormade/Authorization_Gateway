@@ -1,37 +1,39 @@
 # 🔒 Authorization Gateway Service  
 
 ## 📌 Overview  
-The **Authorization Gateway Service** is a lightweight authentication and authorization system that secures website APIs using **JWT (JSON Web Tokens)**. This service ensures that only authenticated users can access protected routes.  
+The **Authorization Gateway Service** is a secure authentication and authorization system built using **React.js (Frontend) and Node.js (Backend)**. It ensures that only authenticated users can access protected routes by using **JWT (JSON Web Tokens)** for authentication.  
 
 ---
 
 ## 🚀 Features  
 ✅ **JWT-based Authentication** for secure access control  
 ✅ **Role-based Access Control (RBAC)** for fine-grained permissions  
-✅ **FastAPI framework** for high-performance execution  
-✅ **OAuth2 Password Flow** for user authentication  
+✅ **React.js** for a seamless user interface  
+✅ **Node.js & Express.js** for a robust backend  
+✅ **MongoDB** for user storage (optional)  
 ✅ **Token-based Authorization** to protect routes  
 
 ---
 
 ## 🛠️ Tech Stack  
-- **Programming Language**: Python 🐍  
-- **Framework**: FastAPI ⚡  
-- **Authentication**: OAuth2 + JWT  
+- **Frontend**: React.js ⚛️  
+- **Backend**: Node.js + Express.js 🚀  
+- **Database**: MongoDB (optional)  
+- **Authentication**: JWT
 - **Security**: HTTPBearer Tokens  
 
 ---
 
-## 📂 API Endpoints  
+## 📂 API Endpoints (Backend)  
 
 | Method | Endpoint      | Description |
 |--------|-------------|-------------|
-| 🟢 `POST` | `/login` | Authenticate user & generate JWT token |
-| 🟢 `GET` | `/protected` | Access protected route (Requires JWT) |
+| 🟢 `POST` | `/api/auth/login` | Authenticate user & generate JWT token |
+| 🟢 `GET` | `/api/auth/protected` | Access protected route (Requires JWT) |
 
 ---
 
-## 🔧 Installation & Setup  
+## 🛠️ Installation & Setup  
 
 ### 1️⃣ Clone the repository  
 ```bash
